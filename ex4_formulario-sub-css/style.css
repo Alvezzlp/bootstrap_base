@@ -16,7 +16,7 @@
     border: #3498db;
 }
 
-.form.control.custom-input {
+.form-control.custom-input {
     border: 3px solid #e74c3c;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -33,7 +33,7 @@
 
 
 .btn.btn-primary.custom-button {
-    background-color: liner-gradient(45deg, #e74c3c, #f39c12);
+    background: linear-gradient(45deg, #e74c3c, #f39c12);
     padding: 0.8rem 2rem;
     border-radius: 50px;
     border: none;
