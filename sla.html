@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodExpress</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">🍔 FoodExpress</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Cardápio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO (novo formato) -->
+<section class="bg-danger text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4">A melhor comida da cidade 🍕</h1>
+    <p class="lead">Rápido, saboroso e feito com amor</p>
+    <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#pedidoModal">
+      Pedir Agora
+    </button>
+  </div>
+</section>
+
+<!-- PRODUTOS EM GRID DIFERENTE -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Nosso Cardápio</h2>
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card h-100 text-center">
+        <img src="https://placehold.co/400x300/ff0000/fff?text=Burger" class="card-img-top">
+        <div class="card-body">
+          <h5>Hambúrguer</h5>
+          <p>Artesanal e suculento</p>
+          <button class="btn btn-success">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 text-center">
+        <img src="https://placehold.co/400x300/ff9900/fff?text=Pizza" class="card-img-top">
+        <div class="card-body">
+          <h5>Pizza</h5>
+          <p>Quentinha e deliciosa</p>
+          <button class="btn btn-success">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 text-center">
+        <img src="https://placehold.co/400x300/ffaa00/fff?text=Batata" class="card-img-top">
+        <div class="card-body">
+          <h5>Batata Frita</h5>
+          <p>Crocante e dourada</p>
+          <button class="btn btn-success">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEÇÃO DIFERENTE (DESTAQUE) -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h2>🔥 Promoção Especial</h2>
+    <p>Compre 2 hambúrgueres e leve uma batata grátis!</p>
+    <button class="btn btn-danger">Aproveitar</button>
+  </div>
+</section>
+
+<!-- CONTATO DIFERENTE (layout horizontal) -->
+<section class="container py-5">
+  <div class="row align-items-center">
+    
+    <div class="col-md-6">
+      <h2>Fale com a gente</h2>
+      <p>Tem dúvidas ou quer fazer um pedido especial?</p>
+    </div>
+
+    <div class="col-md-6">
+      <form>
+        <input class="form-control mb-2" placeholder="Nome">
+        <input class="form-control mb-2" placeholder="Email">
+        <textarea class="form-control mb-2" placeholder="Mensagem"></textarea>
+        <button class="btn btn-danger w-100">Enviar</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal fade" id="pedidoModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Seu Pedido</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input class="form-control mb-2" placeholder="Nome">
+        <textarea class="form-control" placeholder="Digite seu pedido"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button class="btn btn-danger">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">&copy; 2025 FoodExpress</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
